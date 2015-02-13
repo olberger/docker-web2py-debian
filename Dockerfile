@@ -13,7 +13,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     wget unzip
 
 RUN wget http://www.web2py.com/examples/static/web2py_src.zip
-RUN unzip web2py_src.zip
+RUN unzip -q web2py_src.zip
 
 RUN cp -r web2py /var/www/web2py
 
