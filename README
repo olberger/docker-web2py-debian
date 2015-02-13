@@ -1,0 +1,4 @@
+docker build -t debian-web2py .
+docker run -d -p 8080:80 -p 8443:443 debian-web2py
+
+debug : docker exec -t -i [CONTAINER_ID] /bin/bash
