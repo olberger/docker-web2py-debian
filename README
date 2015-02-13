@@ -1,16 +1,16 @@
-This directory contains bits needed to test a docker container running web2py from the Debian package (wheezy) using Apache and WSGI.
+
+This directory contains bits needed to test a docker container running web2py from upstream, over Debian (jessie) using Apache and WSGI.
 
 This is not meant for production and run it at your own risk only.
 
-Note that this is not using latest upstream web2py but the version packaged in Debian (wheezy).
 
 Building
 --------
- $ docker build -t debian-web2py:wheezy .
+ $ docker build -t debian-web2py:jessie .
 
 Testing
 -------
- $ docker run -d -p 8080:80 -p 8443:443 debian-web2py
+ $ docker run -d -p 8080:80 -p 8443:443 debian-web2py:jessie
 
 Connect on http://localhost:8080/ or https://localhost:8443/
 
