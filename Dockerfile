@@ -15,9 +15,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 RUN wget http://www.web2py.com/examples/static/web2py_src.zip
 RUN unzip web2py_src.zip
 
-COPY web2py /var/www/web2py
-
-#RUN ls -R /var/www/
+RUN cp -r web2py /var/www/web2py
 
 # Configuring web2py run by mod_wsgi
 RUN cp /var/www/web2py/handlers/wsgihandler.py /var/www/web2py
