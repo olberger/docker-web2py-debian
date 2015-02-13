@@ -6,7 +6,7 @@ Note that this is not using latest upstream web2py but the version packaged in D
 
 Building
 --------
- $ docker build -t debian-web2py .
+ $ docker build -t debian-web2py:wheezy .
 
 Testing
 -------
